@@ -26,7 +26,7 @@ local function OnGossipHello(event, player, unit)
     player:GossipMenuAddItem(4, "|TInterface/Icons/Achievement_BG_returnXflags_def_WSG:50:50|tChange My Appearance", 1, 3, false, "Are you sure you want to change your appearance?")
     player:GossipMenuAddItem(4, "|TInterface/Icons/INV_Inscription_Scroll:50:50|tChange My Name", 1, 4, false, "Are you sure you want to change your name?")
     if (player:HasAtLoginFlag(AT_LOGIN_RENAME) or player:HasAtLoginFlag(AT_LOGIN_CUSTOMIZE) or player:HasAtLoginFlag(AT_LOGIN_CHANGE_FACTION) or player:HasAtLoginFlag(AT_LOGIN_CHANGE_RACE)) then
-		player:GossipMenuAddItem(4, "|TInterface/Icons/Ability_GhoulFrenzy:50:50|tCancel all customizations", 1, 5, false, "Are you sure you want to cancel all customizations?\nYou will be disconnected.")
+		player:GossipMenuAddItem(4, "|TInterface/Icons/Spell_ChargeNegative:50:50|tCancel all customizations", 1, 5, false, "Are you sure you want to cancel all customizations?\nYou will be disconnected.")
    	end
     player:GossipSendMenu(1, unit)
     return true
