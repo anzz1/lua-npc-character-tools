@@ -29,6 +29,7 @@ local function OnGossipHello(event, player, unit)
         player:GossipMenuAddItem(6, "|TInterface/Icons/Spell_ChargeNegative:50:50:-18:0|tCancel all customizations", 1, 5, false, "Are you sure you want to cancel all customizations?\nYou will be disconnected.")
        end
     player:GossipSendMenu(1, unit)
+    unit:PerformEmote(1)
     return true
 end    
 
